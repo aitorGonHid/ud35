@@ -1,0 +1,26 @@
+<h2>Alta Cliente</h2>
+<div class="formulario" style="display: grid">
+  <div class="row">
+    <div class="col-1">Nombre:</div>
+    <div class="col-11"><input type="text" [(ngModel)]="nombre"></div>
+  </div>
+  <div class="row">
+    <div class="col-1">Cif:</div>
+    <div class="col-11"><input type="text" [(ngModel)]="direccion"></div>
+  </div>
+  <div class="row">
+    <div class="col-1">Direccion:</div>
+    <div class="col-11"><input type="text" [(ngModel)]="cif"></div>
+  </div>
+  <div class="row">
+    <div class="col-1">Grupo:</div>
+    <div class="col-11">
+      <select id="grupoInput" [(ngModel)]="grupo">
+        <option value="grupo 1">grupo 1</option>
+        <option value="grupo 2">grupo 2</option>
+        <option value="grupo 3">grupo 3</option>
+      </select>
+    </div>
+  </div>
+</div>
+<app-list nombre="{{nombre}}" direccion="{{direccion}}" cif="{{cif}}" grupo="{{grupo}}"></app-list>
